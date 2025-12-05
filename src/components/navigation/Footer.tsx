@@ -29,7 +29,7 @@ export function Footer() {
           <div className="max-w-2xl mx-auto text-center">
             <h3 className="text-2xl font-bold mb-2">Hold deg oppdatert</h3>
             <p className="text-slate-300 mb-6">
-              Meld deg pa vart nyhetsbrev for a fa siste nytt om trenerseminarer,
+              Meld deg på vårt nyhetsbrev for å få siste nytt om trenerseminarer,
               fagstoff og arrangementer.
             </p>
             <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
@@ -65,7 +65,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-slate-300 text-sm leading-relaxed">
-              Vi jobber for a utvikle medlemmenes kompetanse, ivareta trenernes
+              Vi jobber for å utvikle medlemmenes kompetanse, ivareta trenernes
               interesser og fremme samarbeid i norsk friidrett.
             </p>
           </div>
@@ -156,7 +156,7 @@ export function Footer() {
                 Personvern
               </Link>
               <Link href="/vilkar" className="hover:text-orange-400 transition-colors">
-                Vilkar
+                Vilkår
               </Link>
             </div>
           </div>

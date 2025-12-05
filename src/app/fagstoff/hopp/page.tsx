@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/Card";
 
 export const metadata: Metadata = {
   title: "Hopp - Fagstoff",
-  description: "Fagstoff og ressurser for hoppovelser - hoydehopp, lengdehopp, tresteg og stavsprang.",
+  description: "Fagstoff og ressurser for hoppøvelser - høydehopp, lengdehopp, tresteg og stavsprang.",
 };
 
 const resources = [
@@ -17,22 +17,22 @@ const resources = [
     description: "PowerPoint-presentasjon om utvikling av spesifikk hoppstyrke.",
   },
   {
-    title: "Trening av juniorutovere i lengde",
+    title: "Trening av juniorutøvere i lengde",
     author: "Piotr Bora",
     type: "presentation",
-    description: "The technical training for young long jumpers - metodikk og ovelser.",
+    description: "The technical training for young long jumpers - metodikk og øvelser.",
   },
   {
-    title: "Hoydehopp for ungdom",
+    title: "Høydehopp for ungdom",
     author: "Thomas Rosvold",
     type: "video",
-    description: "Innforing i hoydehoppteknikk for unge utovere.",
+    description: "Innføring i høydehoppteknikk for unge utøvere.",
   },
   {
-    title: "Hoydehopp teknikk",
+    title: "Høydehopp teknikk",
     author: "Dietmar Moegenburd",
     type: "video",
-    description: "Avansert teknikk i hoydehopp.",
+    description: "Avansert teknikk i høydehopp.",
   },
 ];
 
@@ -73,7 +73,7 @@ export default function HoppPage() {
           <div className="max-w-4xl mx-auto">
             {/* Categories */}
             <div className="flex flex-wrap gap-2 mb-8">
-              {["Alle", "Hoydehopp", "Lengdehopp", "Tresteg", "Stavsprang"].map(
+              {["Alle", "Høydehopp", "Lengdehopp", "Tresteg", "Stavsprang"].map(
                 (cat) => (
                   <button
                     key={cat}

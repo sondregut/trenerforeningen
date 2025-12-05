@@ -6,8 +6,8 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { styles } from "@/lib/colors";
 
 export const metadata: Metadata = {
-  title: "Arsmote",
-  description: "Informasjon om arsmotet i Friidrettens Trenerforening.",
+  title: "Årsmøte",
+  description: "Informasjon om årsmøtet i Friidrettens Trenerforening.",
 };
 
 const previousMeetings = [
@@ -15,16 +15,16 @@ const previousMeetings = [
     year: "2025",
     date: "22. november 2025",
     highlights: [
-      "Arets trener 2025 - Unni Helland",
+      "Årets trener 2025 - Unni Helland",
       "Valg av nytt styre",
-      "Gjennomgang av arsberetning",
+      "Gjennomgang av årsberetning",
     ],
   },
   {
     year: "2024",
     date: "November 2024",
     highlights: [
-      "Arsberetning og regnskap",
+      "Årsberetning og regnskap",
       "Planlegging av aktiviteter",
     ],
   },
@@ -45,12 +45,12 @@ function HeroSection() {
       <div className="container">
         <div className="max-w-3xl">
           <span className="inline-block px-4 py-1.5 bg-orange-500/20 text-orange-300 rounded-full text-sm font-medium mb-6">
-            Medlemsmote
+            Medlemsmøte
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Arsmote</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Årsmøte</h1>
           <p className="text-lg text-slate-300">
-            Arsmotet er foreningens hoyeste organ og avholdes arlig. Her
-            behandles arsberetning, regnskap, valg og andre viktige saker.
+            Årsmøtet er foreningens høyeste organ og avholdes årlig. Her
+            behandles årsberetning, regnskap, valg og andre viktige saker.
           </p>
         </div>
       </div>
@@ -66,26 +66,26 @@ function NextMeetingSection() {
         <div className="max-w-3xl mx-auto">
           <Card className="overflow-hidden">
             <div className="bg-gradient-to-r from-orange-500 to-orange-600 p-6 text-white">
-              <h2 className="text-2xl font-bold mb-2">Neste arsmote</h2>
+              <h2 className="text-2xl font-bold mb-2">Neste årsmøte</h2>
               <p className="text-orange-100">
-                Informasjon om neste arsmote kommer snart.
+                Informasjon om neste årsmøte kommer snart.
               </p>
             </div>
             <CardContent className="p-6 md:p-8">
               <p className="text-slate-600 mb-6">
-                Arsmotet avholdes vanligvis i forbindelse med hostmotet i
-                november. Alle medlemmer far innkalling med sakspapirer i forkant.
+                Årsmøtet avholdes vanligvis i forbindelse med høstmøtet i
+                november. Alle medlemmer får innkalling med sakspapirer i forkant.
               </p>
 
               <div className="space-y-4">
                 <h3 className="font-semibold text-slate-900">
-                  Typisk agenda for arsmote:
+                  Typisk agenda for årsmøte:
                 </h3>
                 <ul className="space-y-2">
                   {[
                     "Godkjenning av innkalling og dagsorden",
-                    "Valg av moteleder og referent",
-                    "Arsberetning fra styret",
+                    "Valg av møteleder og referent",
+                    "Årsberetning fra styret",
                     "Regnskap og revisors beretning",
                     "Innkomne forslag",
                     "Fastsettelse av kontingent",
@@ -107,8 +107,8 @@ function NextMeetingSection() {
 
               <div className="mt-8 p-4 bg-slate-100 rounded-lg">
                 <p className="text-sm text-slate-600">
-                  <span className="font-semibold">Merk:</span> Forslag som onskes
-                  behandlet pa arsmotet ma sendes til styret innen fristen som
+                  <span className="font-semibold">Merk:</span> Forslag som ønskes
+                  behandlet på årsmøtet må sendes til styret innen fristen som
                   oppgis i innkallingen.
                 </p>
               </div>
@@ -126,8 +126,8 @@ function PreviousMeetingsSection() {
     <section className="py-12 md:py-16 bg-slate-100">
       <div className="container">
         <SectionHeader
-          title="Tidligere arsmoter"
-          subtitle="Oversikt over tidligere arsmoter og vedtak"
+          title="Tidligere årsmøter"
+          subtitle="Oversikt over tidligere årsmøter og vedtak"
           centered
           className="mb-12"
         />
@@ -173,11 +173,11 @@ function CoachOfYearSection() {
             Tradisjon siden 1990-tallet
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            Arets trener
+            Årets trener
           </h2>
           <p className="text-lg text-slate-600 mb-8">
-            Hvert ar kar trenerforeningen Arets trener. Utmerkelsen gis til en
-            trener som har utmerket seg gjennom aret med sitt arbeid og sine
+            Hvert år kårer trenerforeningen Årets trener. Utmerkelsen gis til en
+            trener som har utmerket seg gjennom året med sitt arbeid og sine
             resultater.
           </p>
 

@@ -24,7 +24,7 @@ const navItems = [
   { name: "Medlemskap", href: "/medlemskap" },
   { name: "Galleri", href: "/galleri" },
   { name: "Om Oss", href: "/om-oss" },
-  { name: "Arsmote", href: "/arsmote" },
+  { name: "Årsmøte", href: "/arsmote" },
 ];
 
 export function Navigation() {
@@ -144,7 +144,7 @@ export function Navigation() {
             className="lg:hidden p-2 text-slate-700 hover:text-slate-900"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            <span className="sr-only">Apne meny</span>
+            <span className="sr-only">Åpne meny</span>
             {mobileMenuOpen ? (
               <X className="w-6 h-6" />
             ) : (

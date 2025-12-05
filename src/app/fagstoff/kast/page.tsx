@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/Card";
 
 export const metadata: Metadata = {
   title: "Kast - Fagstoff",
-  description: "Fagstoff og ressurser for kastovelser - kule, diskos, slegge og spydkast.",
+  description: "Fagstoff og ressurser for kastøvelser - kule, diskos, slegge og spydkast.",
 };
 
 const resources = [

@@ -8,7 +8,7 @@ import { styles, colors } from "@/lib/colors";
 
 export const metadata: Metadata = {
   title: "Trenerseminar",
-  description: "Arlig trenerseminar med forelesninger og praktiske okter fra nasjonale og internasjonale trenere.",
+  description: "Årlig trenerseminar med forelesninger og praktiske økter fra nasjonale og internasjonale trenere.",
 };
 
 // Hero section
@@ -31,14 +31,14 @@ function HeroSection() {
       <div className="container relative z-10">
         <div className="max-w-3xl">
           <span className="inline-block px-4 py-1.5 bg-orange-500/30 text-orange-300 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
-            Arlig arrangement
+            Årlig arrangement
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Trenerseminar
           </h1>
           <p className="text-lg text-slate-200 mb-8">
-            Vart arlige trenerseminar samler friidrettstrenere fra hele landet for
-            faglig pafy, erfaringsutveksling og inspirasjon. Delta og bli en del
+            Vårt årlige trenerseminar samler friidrettstrenere fra hele landet for
+            faglig påfyll, erfaringsutveksling og inspirasjon. Delta og bli en del
             av fellesskapet!
           </p>
         </div>
@@ -61,13 +61,13 @@ function UpcomingSeminar() {
               Trenerseminar 2026
             </h2>
             <p className="text-lg text-slate-600 mb-6">
-              Planleggingen av Trenerseminar 2026 har startet! Vi jobber med a
+              Planleggingen av Trenerseminar 2026 har startet! Vi jobber med å
               sette sammen et spennende program med dyktige forelesere og
-              relevante temaer for trenere pa alle nivaer.
+              relevante temaer for trenere på alle nivåer.
             </p>
             <p className="text-slate-600 mb-8">
               Mer informasjon om tidspunkt, sted og program kommer snart. Meld deg
-              pa vart nyhetsbrev for a fa beskjed nar pameldingen apner.
+              på vårt nyhetsbrev for å få beskjed når påmeldingen åpner.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -89,7 +89,7 @@ function UpcomingSeminar() {
               <ul className="space-y-4">
                 {[
                   "Forelesninger fra nasjonale og internasjonale trenere",
-                  "Praktiske okter og demonstrasjoner",
+                  "Praktiske økter og demonstrasjoner",
                   "Workshops og gruppearbeid",
                   "Nettverksbygging med andre trenere",
                   "Faglige diskusjoner og erfaringsutveksling",
@@ -129,7 +129,7 @@ function Seminar2025Gallery() {
       <div className="container">
         <SectionHeader
           title="Trenerseminar 2025"
-          subtitle="Bilder fra arets seminar med internasjonale forelesere"
+          subtitle="Bilder fra årets seminar med internasjonale forelesere"
           centered
           className="mb-12"
         />
@@ -180,21 +180,21 @@ function PreviousSeminars() {
     {
       year: "2024",
       highlights: [
-        "Fokus pa ungdomstrening",
+        "Fokus på ungdomstrening",
         "Internasjonale forelesere",
       ],
     },
     {
       year: "2023",
       highlights: [
-        "Styrketrening for friidrettsutovere",
+        "Styrketrening for friidrettsutøvere",
         "Periodisering og planlegging",
       ],
     },
     {
       year: "2022",
       highlights: [
-        "Teknikk i kastovelser",
+        "Teknikk i kastøvelser",
         "Treningsplanlegging",
       ],
     },
@@ -205,7 +205,7 @@ function PreviousSeminars() {
       <div className="container">
         <SectionHeader
           title="Tidligere seminarer"
-          subtitle="Se tilbake pa noen av vare tidligere arrangementer"
+          subtitle="Se tilbake på noen av våre tidligere arrangementer"
           centered
           className="mb-12"
         />

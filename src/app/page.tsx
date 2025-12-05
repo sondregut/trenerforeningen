@@ -41,9 +41,9 @@ function HeroSection() {
             friidrett
           </h1>
           <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
-            Vi jobber for a utvikle medlemmenes kompetanse, ivareta trenernes
+            Vi jobber for å utvikle medlemmenes kompetanse, ivareta trenernes
             interesser, utvikle fellesskap og samarbeid, og sikre trenernes
-            arbeidsvilkar og rettssikkerhet.
+            arbeidsvilkår og rettssikkerhet.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
@@ -89,7 +89,7 @@ function AnnouncementsSection() {
       <div className="container">
         <SectionHeader
           title="Siste nytt"
-          subtitle="Hold deg oppdatert pa det som skjer i foreningen"
+          subtitle="Hold deg oppdatert på det som skjer i foreningen"
           centered
           className="mb-12"
         />
@@ -116,7 +116,7 @@ function AnnouncementsSection() {
                 Planlegging av Trenerseminar 2026 har startet
               </h3>
               <p className="text-slate-600 mb-4">
-                Vi er i gang med planleggingen av neste ars trenerseminar. Mer informasjon kommer snart!
+                Vi er i gang med planleggingen av neste års trenerseminar. Mer informasjon kommer snart!
               </p>
               <Link
                 href="/trenerseminar"
@@ -145,10 +145,10 @@ function AnnouncementsSection() {
             <CardContent className="p-6">
               <p className="text-sm text-slate-500 mb-2">22. November 2025</p>
               <h3 className="text-xl font-semibold mb-3" style={styles.primaryText}>
-                Arets trener 2025 - Unni Helland
+                Årets trener 2025 - Unni Helland
               </h3>
               <p className="text-slate-600 mb-4">
-                Pa hostmotet ble Unni Helland karet til Arets trener 2025. Gratulerer!
+                På høstmøtet ble Unni Helland kåret til Årets trener 2025. Gratulerer!
               </p>
               <Link
                 href="/galleri"
@@ -171,14 +171,14 @@ function FeaturesSection() {
       icon: Calendar,
       title: "Trenerseminar",
       description:
-        "Arlige seminarer med forelesninger og praktiske okter fra nasjonale og internasjonale trenere.",
+        "Årlige seminarer med forelesninger og praktiske økter fra nasjonale og internasjonale trenere.",
       link: "/trenerseminar",
     },
     {
       icon: BookOpen,
       title: "Fagstoff",
       description:
-        "Artikler, presentasjoner og ressurser innen løp, hopp og kast for trenere pa alle nivaer.",
+        "Artikler, presentasjoner og ressurser innen løp, hopp og kast for trenere på alle nivåer.",
       link: "/fagstoff",
     },
     {
@@ -192,7 +192,7 @@ function FeaturesSection() {
       icon: FileText,
       title: "Fagnytt",
       description:
-        "Vart medlemsblad med fagartikler, nyheter og oppdateringer fra trenerforeningen.",
+        "Vårt medlemsblad med fagartikler, nyheter og oppdateringer fra trenerforeningen.",
       link: "/fagnytt",
     },
   ];
@@ -202,7 +202,7 @@ function FeaturesSection() {
       <div className="container">
         <SectionHeader
           title="Ressurser for trenere"
-          subtitle="Alt du trenger for a utvikle deg som friidrettstrener"
+          subtitle="Alt du trenger for å utvikle deg som friidrettstrener"
           centered
           className="mb-12"
         />
@@ -293,15 +293,13 @@ function FagstoffSection() {
       <div className="container">
         <SectionHeader
           title="Fagstoff etter kategori"
-          subtitle="Utforsk var samling av ressurser innen de ulike grenene"
+          subtitle="Utforsk vår samling av ressurser innen de ulike grenene"
           centered
           className="mb-12"
         />
 
         <div className="grid md:grid-cols-3 gap-6">
-          {categories.map((category, index) => {
-            const Icon = category.Icon;
-            return (
+          {categories.map((category, index) => (
               <Link key={index} href={category.link} className="group">
                 <div className="relative h-64 rounded-xl overflow-hidden">
                   {/* Background - image or gradient */}
@@ -320,19 +318,10 @@ function FagstoffSection() {
                       className={`absolute inset-0 bg-gradient-to-br ${category.color}`}
                     />
                   )}
-                  {/* Icon */}
-                  <div className="absolute top-4 right-4 w-20 h-20 text-white/20 group-hover:text-white/30 transition-colors">
-                    <Icon className="w-full h-full" />
-                  </div>
                   {/* Content overlay */}
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
                   <div className="absolute inset-0 flex flex-col justify-end p-6 text-white">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
-                        <Icon className="w-6 h-6" />
-                      </div>
-                      <h3 className="text-2xl font-bold">{category.title}</h3>
-                    </div>
+                    <h3 className="text-2xl font-bold mb-2">{category.title}</h3>
                     <p className="text-white/80">{category.description}</p>
                     <span className="inline-flex items-center gap-1 mt-4 font-medium group-hover:gap-2 transition-all">
                       Utforsk <ArrowRight className="w-4 h-4" />
@@ -340,8 +329,7 @@ function FagstoffSection() {
                   </div>
                 </div>
               </Link>
-            );
-          })}
+          ))}
         </div>
       </div>
     </section>
@@ -359,7 +347,7 @@ function MembershipCTA() {
             Bli en del av fellesskapet
           </h2>
           <p className="text-lg text-slate-300 mb-8">
-            Som medlem far du tilgang til fagstoff, rabatterte priser pa
+            Som medlem får du tilgang til fagstoff, rabatterte priser på
             trenerseminarer, og blir en del av et nettverk av engasjerte
             friidrettstrenere.
           </p>
@@ -368,7 +356,7 @@ function MembershipCTA() {
               href="/medlemskap"
               className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded-lg transition-colors"
             >
-              Bli medlem na
+              Bli medlem nå
               <ArrowRight className="w-5 h-5" />
             </Link>
             <Link

@@ -8,7 +8,7 @@ import { styles, colors } from "@/lib/colors";
 
 export const metadata: Metadata = {
   title: "Om Oss",
-  description: "Lær mer om Friidrettens Trenerforening, vart formal, styret og historie.",
+  description: "Lær mer om Friidrettens Trenerforening, vårt formål, styret og historie.",
 };
 
 const boardMembers = [
@@ -27,7 +27,7 @@ const boardMembers = [
     image: "https://primary.jwwb.nl/public/h/s/f/temp-ftprvysvjpxdkslapovc/gundersen_hilde_p-standard-high.jpg?enable-io=true&width=347",
   },
   {
-    name: "Bjorn Johansen",
+    name: "Bjørn Johansen",
     role: "Styremedlem",
     email: null,
     phone: null,
@@ -41,7 +41,7 @@ const boardMembers = [
     image: "https://primary.jwwb.nl/public/h/s/f/temp-ftprvysvjpxdkslapovc/image-high-fme28a-high.png?enable-io=true&width=347",
   },
   {
-    name: "Bjorn Bogsti",
+    name: "Bjørn Bogsti",
     role: "Styremedlem",
     email: null,
     phone: null,
@@ -60,17 +60,17 @@ const values = [
   {
     icon: Target,
     title: "Kompetanseutvikling",
-    description: "Vi jobber for a utvikle medlemmenes faglige kompetanse gjennom seminarer, fagstoff og erfaringsutveksling.",
+    description: "Vi jobber for å utvikle medlemmenes faglige kompetanse gjennom seminarer, fagstoff og erfaringsutveksling.",
   },
   {
     icon: Users,
     title: "Interessevaretagelse",
-    description: "Vi ivaretar trenernes interesser og arbeider for gode rammevilkar for treneryrket.",
+    description: "Vi ivaretar trenernes interesser og arbeider for gode rammevilkår for treneryrket.",
   },
   {
     icon: Handshake,
     title: "Fellesskap",
-    description: "Vi bygger et fellesskap av engasjerte trenere og fremmer samarbeid pa tvers av klubber og regioner.",
+    description: "Vi bygger et fellesskap av engasjerte trenere og fremmer samarbeid på tvers av klubber og regioner.",
   },
 ];
 
@@ -81,12 +81,12 @@ function HeroSection() {
       <div className="container">
         <div className="max-w-3xl">
           <span className="inline-block px-4 py-1.5 bg-orange-500/20 text-orange-300 rounded-full text-sm font-medium mb-6">
-            Var historie
+            Vår historie
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Om oss</h1>
           <p className="text-lg text-slate-300">
-            Friidrettens Trenerforening ble stiftet for a samle og utvikle
-            friidrettstrenere i Norge. Vi jobber for a heve kompetansen og
+            Friidrettens Trenerforening ble stiftet for å samle og utvikle
+            friidrettstrenere i Norge. Vi jobber for å heve kompetansen og
             fremme samarbeid i trenerfellesskapet.
           </p>
         </div>
@@ -102,16 +102,16 @@ function AboutSection() {
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">Var historie</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">Vår historie</h2>
             <p className="text-slate-600 mb-6">
-              Friidrettens Trenerforening ble etablert pa bakgrunn av Norges
-              sterke friidrettsresultater, saerlig pa 1990-tallet. Suksessen ble
+              Friidrettens Trenerforening ble etablert på bakgrunn av Norges
+              sterke friidrettsresultater, særlig på 1990-tallet. Suksessen ble
               tilskrevet trenernes kompetanse og riktig treningsprogresjon.
             </p>
             <p className="text-slate-600 mb-6">
-              Foreningen har som formal a utvikle medlemmenes kompetanse, ivareta
+              Foreningen har som formål å utvikle medlemmenes kompetanse, ivareta
               trenernes interesser, utvikle fellesskap og samarbeid, sikre
-              trenernes arbeidsvilkar og rettssikkerhet, samt etablere kontakt med
+              trenernes arbeidsvilkår og rettssikkerhet, samt etablere kontakt med
               sentrale organisasjoner.
             </p>
 
@@ -142,8 +142,8 @@ function ValuesSection() {
     <section className="py-12 md:py-16 bg-slate-100">
       <div className="container">
         <SectionHeader
-          title="Vare verdier"
-          subtitle="Det vi star for og jobber mot"
+          title="Våre verdier"
+          subtitle="Det vi står for og jobber mot"
           centered
           className="mb-12"
         />
@@ -244,7 +244,7 @@ function BoardSection() {
                 Eystein Enoksen
               </h3>
               <p className="text-amber-600 text-center text-sm font-medium">
-                Aeresmedlem
+                Æresmedlem
               </p>
             </CardContent>
           </Card>

@@ -27,7 +27,7 @@ const videos = [
   {
     title: "400m hekk-trening",
     presenter: "Eystein Enoksen",
-    description: "Metodikk og ovelser for 400m hekk.",
+    description: "Metodikk og øvelser for 400m hekk.",
     category: "Løp",
     thumbnail: "hurdles",
   },
@@ -39,16 +39,16 @@ const videos = [
     thumbnail: "javelin",
   },
   {
-    title: "Hoydehopp for ungdom",
+    title: "Høydehopp for ungdom",
     presenter: "Thomas Rosvold",
-    description: "Innforing i hoydehoppteknikk for unge utovere.",
+    description: "Innføring i høydehoppteknikk for unge utøvere.",
     category: "Hopp",
     thumbnail: "highjump",
   },
   {
-    title: "Hoydehopp",
+    title: "Høydehopp",
     presenter: "Dietmar Moegenburd",
-    description: "Avansert teknikk i hoydehopp.",
+    description: "Avansert teknikk i høydehopp.",
     category: "Hopp",
     thumbnail: "highjump2",
   },
@@ -70,7 +70,7 @@ function HeroSection() {
           </h1>
           <p className="text-lg text-slate-300">
             Se opptak fra tidligere trenerseminarer og instruksjonsvideoer fra
-            erfarne friidrettstrenere. Lær nye teknikker og fa inspirasjon.
+            erfarne friidrettstrenere. Lær nye teknikker og få inspirasjon.
           </p>
         </div>
       </div>

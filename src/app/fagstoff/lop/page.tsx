@@ -20,7 +20,7 @@ const resources = [
     title: "400m hekk-trening",
     author: "Eystein Enoksen",
     type: "presentation",
-    description: "Metodikk og ovelser for 400m hekk.",
+    description: "Metodikk og øvelser for 400m hekk.",
   },
   {
     title: "Bruk hue! - Mental trening",

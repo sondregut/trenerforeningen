@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { FileText, Download, Presentation, ArrowLeft } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/Card";
 
@@ -39,18 +40,28 @@ export default function HoppPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-green-600 to-green-800 text-white py-12 md:py-16">
-        <div className="container">
+      <section className="relative text-white py-12 md:py-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="https://paw.princeton.edu/sites/default/files/styles/hero_teaser_style/public/images/content/Sports.ledeNew.jpg.webp?itok=8SPdgX-Y"
+            alt="Hopp"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/80 to-slate-900/60" />
+        </div>
+        <div className="container relative z-10">
           <Link
             href="/fagstoff"
-            className="inline-flex items-center gap-2 text-green-200 hover:text-white mb-6 transition-colors"
+            className="inline-flex items-center gap-2 text-slate-300 hover:text-white mb-6 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             Tilbake til Fagstoff
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Hopp</h1>
-          <p className="text-lg text-green-100 max-w-2xl">
-            Materiell og teknikker for hoppovelser - hoydehopp, lengdehopp,
+          <p className="text-lg text-slate-200 max-w-2xl">
+            Materiell og teknikker for hoppøvelser - høydehopp, lengdehopp,
             tresteg og stavsprang.
           </p>
         </div>

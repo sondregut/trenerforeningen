@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { FileText, Download, Presentation, ArrowLeft } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/Card";
 
@@ -43,19 +44,29 @@ export default function KastPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-orange-600 to-orange-800 text-white py-12 md:py-16">
-        <div className="container">
+      <section className="relative text-white py-12 md:py-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="https://www.teamnor.no/contentassets/f3e36dc56dcb45d8b0d4e9003ef7a295/eivindhenriksen_612.jpg"
+            alt="Kast"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/80 to-slate-900/60" />
+        </div>
+        <div className="container relative z-10">
           <Link
             href="/fagstoff"
-            className="inline-flex items-center gap-2 text-orange-200 hover:text-white mb-6 transition-colors"
+            className="inline-flex items-center gap-2 text-slate-300 hover:text-white mb-6 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             Tilbake til Fagstoff
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Kast</h1>
-          <p className="text-lg text-orange-100 max-w-2xl">
-            Fagstoff for kastovelser - kule, diskos, slegge og spydkast med fokus
-            pa teknikk og styrke.
+          <p className="text-lg text-slate-200 max-w-2xl">
+            Fagstoff for kastøvelser - kule, diskos, slegge og spydkast med fokus
+            på teknikk og styrke.
           </p>
         </div>
       </section>

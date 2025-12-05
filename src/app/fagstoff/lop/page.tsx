@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { FileText, Download, Video, ArrowLeft } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/Card";
 
@@ -33,17 +34,27 @@ export default function LopPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-12 md:py-16">
-        <div className="container">
+      <section className="relative text-white py-12 md:py-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="https://www.friidrett.no/contentassets/c097801a30364ee29679440a50ed2897/img_2025-08-04-183918.jpg"
+            alt="Løp"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/80 to-slate-900/60" />
+        </div>
+        <div className="container relative z-10">
           <Link
             href="/fagstoff"
-            className="inline-flex items-center gap-2 text-blue-200 hover:text-white mb-6 transition-colors"
+            className="inline-flex items-center gap-2 text-slate-300 hover:text-white mb-6 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             Tilbake til Fagstoff
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Løp</h1>
-          <p className="text-lg text-blue-100 max-w-2xl">
+          <p className="text-lg text-slate-200 max-w-2xl">
             Ressurser og fagstoff for løpsdisipliner - fra sprint til maraton,
             inkludert hekkeløp og stafett.
           </p>

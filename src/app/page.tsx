@@ -134,7 +134,7 @@ function AnnouncementsSection() {
                 src="https://primary.jwwb.nl/public/h/s/f/temp-ftprvysvjpxdkslapovc/unni-high-ds14d9.jpg?enable-io=true&crop=0.3625%3A1&width=816"
                 alt="Unni Helland - Årets trener 2025"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-[center_25%]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <span className="absolute top-3 left-3 inline-flex items-center gap-1.5 px-3 py-1 bg-amber-500 text-white rounded-full text-xs font-medium">
